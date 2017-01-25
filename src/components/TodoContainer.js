@@ -11,7 +11,7 @@ class TodoContainer extends Component {
         const {todo, toggleCompleted} = this.props;
         console.log('rendering')
         return <Todo
-            onClick={() => toggleCompleted(todo.id)}
+            toggle={() => toggleCompleted(todo.id)}
             completed={todo.completed}
             id={todo.id}
         />

@@ -1,8 +1,8 @@
 import React, {PropTypes} from 'react';
 
-const Todo = ({id, completed, onClick}) => (
+const Todo = ({id, completed, toggle}) => (
     <div
-        onClick={onClick}
+        onMouseEnter={toggle}
         style={{
             width: 50, height: 50,
             backgroundColor: completed ? 'rgba(24, 171, 24, 0.54)' : 'rgba(119, 119, 119, 0.38)',
