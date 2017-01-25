@@ -2,6 +2,8 @@ import {combineReducers} from 'redux';
 
 const todos = (state = [], action) => {
     switch (action.type) {
+        case 'SET_TODOS':
+            return action.todos
         case 'TOGGLE_COMPLETED':
 
             return state.map(t => {
