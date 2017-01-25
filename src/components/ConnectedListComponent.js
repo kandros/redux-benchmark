@@ -4,7 +4,7 @@ import TodoContainer from './TodoContainer';
 import {toggleCompleted} from '../actions'
 
 
-const OneContainerForAll = ({todos, toggleCompleted}) => (
+const ConnectedListComponent = ({todos, toggleCompleted}) => (
     <div style={{display: 'flex', flexWrap: 'wrap'}}>
         {todos.map(t => (
             <TodoContainer
@@ -18,4 +18,4 @@ const OneContainerForAll = ({todos, toggleCompleted}) => (
 
 export default connect(state => ({
     todos: state.todos
-}), {toggleCompleted})(OneContainerForAll)
+}), {toggleCompleted})(ConnectedListComponent)

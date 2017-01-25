@@ -1,11 +1,11 @@
 import React from 'react';
-import SingleConnectedComponent from './OneContainerForAll';
+import ConnectedListComponent from './ConnectedListComponent';
 import Config from './Config';
 
 const App = () => (
     <div>
         <Config/>
-        <SingleConnectedComponent/>
+        <ConnectedListComponent/>
     </div>
 );
 
